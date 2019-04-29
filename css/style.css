@@ -1,8 +1,4 @@
-/*@charset "utf-8";*/
 /*
-/*	Copyright (c) 2018 Marketify
-/*	Author: Marketify
-/*	This file is made for CURRENT TEMPLATE
 
 
 	01) EDREA BASE
@@ -24,21 +20,13 @@
 /*	01) EDREA BASE
 /*---------------------------------------------------*/
 
-/* @font-face {
-	font-family: 'Abolition Regular';
-	src: url('../fonts/abolition-regular-webfont.eot');
-	src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/abolition-regular-webfont.woff') format('woff'),
-		 url('../fonts/abolition-regular-webfont.ttf') format('truetype');
-  } */
-
 html {
 	overflow-x: hidden;
 	padding: 0px;
 	margin: 0px
 }
 body{
-	/* font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; */
+	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	line-height: 1.8;
 	letter-spacing: 0.5px;
@@ -46,12 +34,6 @@ body{
 	font-weight: 400;
 }
 
-/* h1,
-h2,
-h3,
-p {
-  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
-} */
 
 svg{
 	fill: currentcolor;
@@ -155,10 +137,10 @@ img.svg{
 /*	02) EDREA HEADER
 /*---------------------------------------------------*/
 
-i.fas.fa-home::before {
-	size: 5em;
-	color: white
+.fas.fa-home {
+	color: white;
 }
+
 .edrea_tm_header{
 	width: 100%;
 	height: auto;
@@ -195,6 +177,7 @@ i.fas.fa-home::before {
 .edrea_tm_header.scroll .edrea_tm_navigation_wrap .menu > ul > li a:hover{color: #BD0A0D;}
 .edrea_tm_navigation_wrap,
 .edrea_tm_navigation_wrap .navigation_inner{
+	transition: .2s;
 	background: #000;
 	width: 100%;
 	height: auto;
@@ -249,7 +232,7 @@ i.fas.fa-home::before {
 .edrea_tm_navigation_wrap .menu > ul > li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+	/* font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; */
 	font-size: 16px;
 	font-weight: 600;
 	display: block;
@@ -299,7 +282,7 @@ i.fas.fa-home::before {
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: rgba(4,18,48,.97);
+	background-color: black;
 	padding: 50px 20px;
 	display: none;
 	border-bottom: 1px solid rgba(0,0,0,.09);
@@ -324,13 +307,18 @@ i.fas.fa-home::before {
 	list-style-type: none;
 }
 .edrea_tm_mobile_menu_wrap .mob_menu > ul > li{margin: 0px 0px 5px 0px;}
+.edrea_tm_mobile_menu_wrap .mob_menu > ul > li a:hover {color: red}
 .edrea_tm_mobile_menu_wrap .mob_menu > ul > li:last-child{margin-bottom: 0px;}
 .edrea_tm_mobile_menu_wrap .mob_menu > ul > li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+	/* font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; */
 	font-weight: 600;
 	font-size: 19px;
+}
+
+.logo{
+	color: white;
 }
 
 /*---------------------------------------------------*/
@@ -522,7 +510,7 @@ i.fas.fa-home::before {
 	right: 0px;
 	z-index: 20;
 }
-.edrea_tm_universal_box_wrap .overlay_image.hero{background-image: url(..//img/hero/jack-anstey-383370-unsplash.jpg);}
+.edrea_tm_universal_box_wrap .overlay_image.hero{background-image: url(..//img/hero/sandro-schuh-80814-unsplash.jpg);}
 .edrea_tm_universal_box_wrap .overlay_color.hero{background-color: rgba(111, 112, 114, 0.6);}
 .edrea_tm_universal_box_wrap .overlay_color.video{background-color: rgba(111, 112, 114, 0.8);}
 .edrea_tm_universal_box_wrap .content{
@@ -538,13 +526,13 @@ i.fas.fa-home::before {
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .edrea_tm_universal_box_wrap .content.hero{
-	font-family: 'Oswald', sans-serif;
+	/* font-family: 'Oswald', sans-serif; */
 	height: 100vh;
 	overflow: hidden;
 }
 .edrea_tm_universal_box_wrap .container.hero{position: static;}
 .edrea_tm_hero_title{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Dosis', sans-serif;
 	position: absolute;
 	width: 100%;
 	top: 50%;
@@ -553,7 +541,7 @@ i.fas.fa-home::before {
 	text-align: center;
 }
 .edrea_tm_hero_title .animate{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Dosis', sans-serif;
 	font-size: 70px;
 	font-weight: 700;
 	letter-spacing: -1px;
@@ -707,7 +695,7 @@ i.fas.fa-home::before {
 	clear: both;
 	float: left;
 	text-align: left;
-	margin-bottom: 120px;
+	margin-bottom: 20px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -725,7 +713,7 @@ i.fas.fa-home::before {
 }
 .edrea_tm_main_title_holder h3{
 	font-weight: 900;
-	color: #041230;
+	color: black;
 	font-size: 30px;
 	line-height: 1;
 }
@@ -737,7 +725,7 @@ i.fas.fa-home::before {
 	content: "";
 	width: 50px;
 	height: 4px;
-	background-color: #041230;
+	background-color:black ;
 	letter-spacing: 0px;
 	bottom: -10px;
 }
@@ -789,7 +777,7 @@ i.fas.fa-home::before {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(..//img/about/1.jpg);
+	background-image: url(..//img/about/niall.jpg);
 }
 .edrea_tm_about_wrap .leftbox .about_image_wrap .border .inner{
 	position: absolute;
@@ -797,7 +785,7 @@ i.fas.fa-home::before {
 	bottom: -25px !important;
 	left: 25px !important;
 	right: -25px !important;
-	border: 10px solid #041230;
+	/* border: 10px solid #041230; */
 }
 .edrea_tm_about_wrap .leftbox .about_image_wrap img{opacity: 0;}
 .edrea_tm_about_wrap .rightbox{
@@ -821,7 +809,7 @@ i.fas.fa-home::before {
 }
 .edrea_tm_about_wrap .definition{margin-bottom: 20px;}
 .edrea_tm_about_wrap .definition p{color: #333;}
-.edrea_tm_about_wrap .definition p strong{color: #041230;}
+.edrea_tm_about_wrap .definition p strong{color: black;}
 .progress_bar_wrap_total{
 	width: 100%;
 	height: auto;
@@ -1008,6 +996,76 @@ i.fas.fa-home::before {
 /*	07)	EDREA SERVICES
 /*---------------------------------------------------*/
 
+.technologies-box {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.technologyBoxImage {
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+}
+
+.box2 {
+	background-image: url("../img/about/logo-javascript.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.box4 {
+	background-image: url("../img/about/react-logo-1000-transparent.png")
+}
+
+.box3 {
+	background-image: url("../img/about/css.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.box1 {
+	background-image: url("http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.box5 {
+	background-image: url("https://i2.wp.com/www.ryadel.com/wp-content/uploads/2016/08/c-sharp-logo.png?fit=750%2C375&ssl=1");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.box6 {
+	background-image: url("../img/about/git.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.box7 {
+	background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.box8 {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ_NGQM3TWsHq3s5qZufTDqPlcMec9-O7jXzyZGc20m6zzXeT");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.box9 {
+	background-image: url("data:image/jpeg;base64,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");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
 .edrea_tm_list_wrap{
 	width: 100%;
 	height: auto;
@@ -1105,7 +1163,7 @@ i.fas.fa-home::before {
 	top: -147px;
 }
 .edrea_tm_services_wrap .carousel_nav .custom_nav a{
-	background-color: #041230;
+	background-color:black;
 	padding: 22px;
 	border-radius: 3px;
 	display: inline-block;
@@ -1152,7 +1210,7 @@ i.fas.fa-home::before {
 	clear: both;
 	float: left;
 	position: relative;
-	border: 15px solid #041230;
+	border: 15px solid black;
 	padding: 70px 45px 53px 45px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1165,7 +1223,7 @@ i.fas.fa-home::before {
 	right: 0px;
 	bottom: 0px;
 	top: 100%;
-	background-color: #041230;
+	background-color: slategray;
 	z-index: 2;
 	
 	-webkit-transition: all .3s ease;
@@ -1381,7 +1439,7 @@ i.fas.fa-home::before {
 	font-size: 15px;
 	font-weight: 600;
 	color: #000000;
-	
+
 	transition: all .3s ease;
 }
 #edrea_tm_popup_service .service_socials ul li a:hover{color: #BD0A0D;}
@@ -1441,8 +1499,8 @@ i.fas.fa-home::before {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 93px;
-	padding-bottom: 170px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: #fff;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -1868,6 +1926,14 @@ i.fas.fa-home::before {
 /*	10) EDREA CONTACT
 /*---------------------------------------------------*/
 
+/* #contactInfo {
+	font-size: 20px;
+}
+
+#contactLabel {
+	font-size: 20px;
+} */
+
 .edrea_tm_contact_wrap_all{
 	width: 100%;
 	height: auto;
@@ -1913,7 +1979,10 @@ i.fas.fa-home::before {
     color: #000;
 }
 .edrea_tm_contact_wrap_all .leftbox .short_info_wrap ul li span{padding-left: 5px;}
-.edrea_tm_contact_wrap_all .leftbox .short_info_wrap ul li a{
+.edrea_tm_contact_wrap_all .leftbox .short_info_wrap ul li a:hover{color: red}
+.edrea_tm_contact_wrap_all .leftbox .short_info_wrap ul li a {
+	font-size: 18px;
+	transition: 0.2s;
 	text-decoration: none;
 	color: #000;
 }
@@ -1921,7 +1990,7 @@ i.fas.fa-home::before {
 	width: 60%;
 	height: auto;
 	float: right;
-	
+
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */ 	
@@ -1930,7 +1999,7 @@ i.fas.fa-home::before {
 	max-width: 830px;
 	height: auto;
 	margin: 0px auto;
-	
+
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
@@ -1985,7 +2054,7 @@ i.fas.fa-home::before {
 .edrea_tm_contact_wrap .edrea_tm_button a{
 	text-decoration: none;
     color: #fff;
-    background-color: #041230;
+    background-color: black;
     font-weight: 600;
     padding: 12px 35px;
     border-radius: 3px;
@@ -2032,7 +2101,7 @@ i.fas.fa-home::before {
 	z-index: 1;
 }
 .edrea_tm_address_holder_wrap{
-	background-color: rgba(10,4,37,1);
+	background-color: black
 }
 .edrea_tm_address_holder_wrap .inner_wrap{
 	text-align: center;
@@ -2081,7 +2150,7 @@ i.fas.fa-home::before {
 	clear: both;
 	float: left;
 	text-align: left;
-	background-color: #041230;
+	background-color: black;
 	padding: 50px 0px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -2109,7 +2178,7 @@ i.fas.fa-home::before {
 	overflow: hidden;
 	outline: 1px solid rgba(255,255,255,.2);
 
-	background-color: #041230;
+	background-color: black;
     padding: 22px;
     border-radius: 3px;
     display: inline-block;
@@ -2253,13 +2322,13 @@ i.fas.fa-home::before {
 	#edrea_tm_popup_service .close{right: 0px;}
 }
 @media (max-width: 1040px) {
-	.edrea_tm_navigation_wrap{background: black}
+	.edrea_tm_navigation_wrap{background-color: black}
 	.mob_menu{background: black}
 	.edrea_tm_mobile_menu_wrap{background: black}
 	.edrea_tm_trigger{display: block;}
 	.edrea_tm_navigation_wrap .nav_list_wrap{display: none;}
 	.edrea_tm_navigation_wrap .logo{position: relative;top:-1px;display: inline-block;}
-	.edrea_tm_navigation_wrap{padding: 30px 0px;background-color: #041230;border-bottom: 1px solid rgba(255,255,255,.1);}
+	.edrea_tm_navigation_wrap{padding: 30px 0px;background-color: black;border-bottom: 1px solid rgba(255,255,255,.1);}
 	.edrea_tm_list_wrap[data-column="4"] ul.total > li{width: 33.3333%;}
 	.edrea_tm_list_wrap[data-column="5"] ul.total > li{width: 33.3333%;}
 	.edrea_tm_services_wrap_second .edrea_tm_list_wrap[data-column="4"] ul.total > li{width: 33.3333%;}
@@ -2324,4 +2393,14 @@ i.fas.fa-home::before {
 	.edrea_tm_portfolio_list > li{width: 100%;padding: 0px;}
 	.edrea_tm_portfolio_filter li{margin-right: 20px;}
 	.edrea_tm_totop{bottom: 20px;right: 10px;}
-}	
+}
+
+* {
+	font-family: 'Dosis', sans-serif;
+}
+
+.nameNiall {
+	font-family: 'Dosis', sans-serif;
+	size: 70px;
+	color: white
+}

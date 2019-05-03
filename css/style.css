@@ -1066,6 +1066,13 @@ img.svg{
 	background-size: cover
 }
 
+.box10 {
+	background-image: url("https://i1.wp.com/www.ryadel.com/wp-content/uploads/2017/09/asp-net-core-logo.png?fit=750%2C280&ssl=1");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
 .edrea_tm_list_wrap{
 	width: 100%;
 	height: auto;

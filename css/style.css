@@ -670,7 +670,8 @@ img.svg{
 	color: black;
 	margin:15px;
 	padding: 12px 35px;
-	border: slategray
+	border: slategray;
+	font-size: large
 }
 
 .aboutButtons {
@@ -1222,7 +1223,7 @@ img.svg{
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
-			box-sizing: border-box; /* Opera/IE 8+ */ 
+			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .edrea_tm_services_wrap ul li .inner .overlay{
 	position: absolute;
@@ -1501,6 +1502,25 @@ img.svg{
 /*	08) EDREA PORTFOLIO
 /*---------------------------------------------------*/
 
+.capstoneImageBoxes {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: url("../img/portfolio/nice-kick.PNG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.capstoneImageBoxes {
+	margin: 10px;
+	width: 500px;
+	height: 500px;
+	background-size: contain;
+}
+
 .edrea_tm_portfolio_wrapper_all{
 	width: 100%;
 	height: auto;
@@ -1512,7 +1532,7 @@ img.svg{
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
-			box-sizing: border-box; /* Opera/IE 8+ */ 
+			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .edrea_tm_portfolio_wrapper_all .edrea_tm_button{text-align: center;}
 .edrea_tm_portfolio_wrap{
